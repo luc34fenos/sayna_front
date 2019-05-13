@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sayna</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio Bootstrap 4 Template">
+    <meta name="author" content="kingstudio.ro">
+    <!-- Favicon -->
+    <link rel="icon" href="images/saynaicon_4.png" >
+    <!-- Site Title -->
+    <title>Sayna-Mada</title>
+    <!-- Bootstrap 4 core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script src="js/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+    </script>
+    <!-- / Portfolio Script -->
+
+
+    <!-- LightBox -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script>
+    // This will create a single gallery from all elements that have class "lightbox"
+    $('.lightbox').each(function() {
+        $(this).magnificPopup({
+            delegate: 'a.image-lightbox', // the selector for gallery item
+            type: 'image',
+            gallery: {
+              enabled:true
+            }
+        });
+    });
+    </script>
+    <!-- / LightBox -->
+
+    <!-- facts counter -->
+    <script src="js/jquery.countTo.js"></script>
+     <script>
+          $('.timer').countTo({
+            refreshInterval: 60,
+            formatter: function (value, options) {
+              return value.toFixed(options.decimals);
+            },
+          });
+    </script>
+    <!-- / facts counter -->
+
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+    $('#clients-carousel').owlCarousel({
+        loop:true,
+        margin:100,
+        dots: false,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+    </script>
+    <!-- / Owl Carousel -->
+
+
+  </head>
+
+  <body>
+    
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="top"></div>
+
+    <div id="main-content">
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: url('images/bg-img-small.jpg');">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" ><img src="images/saynaicon_4.png" style="border-radius: 50%" alt=""></a>
+
+                <button class="navbar-toggler collapsed menu-text" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                    <span class="sr-only">Sayna</span>
+                </button><!-- / navbar-toggler -->
+
+                <div class="collapse navbar-collapse" id="navbar-toggle">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item after-dropdown">
+                            <a class="nav-link" href="index.html" >ACCEUIL</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#x" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROGRAMME</a>
+                              <div class="dropdown-menu drop-to-right dropdown-inverse animated fadeIn fast" aria-labelledby="dropdown1">
+                                  <a class="dropdown-item" href="simplon.html" >SIMPLON</a>
+                                  <a class="dropdown-item" href="thp.html" >T.H.P</a>
+                              </div><!-- / dropdown-menu -->
+                        </li><!-- / dropdown -->
+                        <li class="nav-item after-dropdown">
+                            <a class="nav-link" href="equipe.html" >EQUIPE</a>
+                        </li>
+
+                        <li class="nav-item last">
+                            <a class="nav-link smooth-scroll" href="#reveal-footer" >CONTACT</a>
+                        </li>
+
+                    </ul><!-- / navbar-nav -->
+                </div><!-- / navbar-collapse -->
+            </div><!-- / container -->
+        </nav><!-- / navbar -->
+
+
+        <header class="bg-primary has-sticky-menu">
+            <div class="container">
+                <div class="header-content text-center">
+                    <h2 class="text-white">DREAM TEAM</h2>
+                    <p class="text-white mb-0"> @sayna's Gang</p>
+                </div><!-- / header-content -->
+            </div><!-- / container -->
+        </header>
+
+        <section id="team">
+            <div class="container w70">
+                <h3 class="section-title text-center">NOTRE EQUIPE</h3>
+                <div class="spacer">&nbsp;</div>
+                <p class="text-center">Une équipe dynamique, qui se donne corps et âme pour redresser Madagascar, en aidant les jeunes du pays à trouver du travail et sortir de la pauvrété.</p>
+                <div class="spacer-2x">&nbsp;</div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/matinah.jpg" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Matina</h6>
+                                <p class="mb-1 text-sm">CO-FONDATRICE DE SAYNA</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/RazafimahefaMatina/" class="btn-social btn-facebook-link p-2"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/razafimahefam?lang=en" class="btn-social btn-twitter-link p-2"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/matina_razafimahefa/?hl=en" class="btn-social btn-instagram-link p-2"><i class="fab fa-instagram"></i></a>
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/nirinah.jpg" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Nirina</h6>
+                                <p class="mb-1 text-sm">CO-FONDATRICE DE SAYNA</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/Nirina.Rahoeliarivahy" class="btn-social btn-facebook-link p-2"><i class="fab fa-facebook-f"></i></a>
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/pat.jpg" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Patrick</h6>
+                                <p class="mb-1 text-sm">CTO</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/pat.triip?refid=12" class="btn-social btn-facebook-link p-2"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/patpasha/?fbclid=IwAR3SZhR-WS7F4xL-WRYRWr8xGK1dRcPhPKHdnEIp4w61jYtlf7Vz98I0TTI" class="btn-social btn-instagram-link p-2"><i class="fab fa-instagram"></i></a>
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/mialy.jpg" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Mialy</h6>
+                                <p class="mb-1 text-sm">LEAD COMMUNITY</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/haingminouuch" class="btn-social btn-facebook-link p-2"><i class="fab fa-facebook-f"></i></a>
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/nancy.jpg" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Nancy</h6>
+                                <p class="mb-1 text-sm">Chargé de Médiation Emploi</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/nancy.nomentsoa" class="btn-social btn-facebook-link p-2"><i class="fab fa-facebook-f"></i></a>
+                                  
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/tati.JPG" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Tatianah</h6>
+                                <p class="mb-1 text-sm">COMPTABLE</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/tatiana.fitiavana.7" class="btn-social btn-facebook-link p-2"><i class="fab fa-facebook-f"></i></a>
+
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/feno.JPG" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Fenosoa</h6>
+                                <p class="mb-1 text-sm">ADMIN</p>
+                                <div class="social-icons">
+                                    <div class="spacer">&nbsp;</div>
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/neli.jpg" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Neilly</h6>
+                                <p class="mb-1 text-sm">DESIGNER/ DEVELOPPEUR FRONT-END</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/gondol.neilly?fref=pb&hc_location=friends_tab" class="btn-social btn-facebook-link p-2"><i class="fab fa-facebook-f"></i></a>
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/mahef.jpg" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Mahefa</h6>
+                                <p class="mb-1 text-sm">DEVELOPPEUR FULL-STACK</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/profile.php?id=100009483587200" class="btn-social btn-facebook-link p-2"><i class="fab fa-facebook-f"></i></a>
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/sitrakah.jpg" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Fenositraka</h6>
+                                <p class="mb-1 text-sm">DEVELOPPEUR BACK-END</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/fenositraka.rasolondraibe" class="btn-social btn-facebook-link p-2"><i class="fab fa-facebook-f"></i></a>
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/andee.jpg" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Andee</h6>
+                                <p class="mb-1 text-sm">COMMUNITY MANAGER/ DEVELOPPEUR FRONT-END </p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/andee.rakut?fref=pb&hc_location=friends_tab" class="btn-social btn-facebook-link p-2"><i class="fab fa-facebook-f"></i></a>
+
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                    <div class="col-md-4">
+                        <div class="team block image-block text-center">
+                            <img src="images/staff/brunoh.jpg" alt="">
+                            <div class="team-content inner-space bg-white">
+                                <h6 class="box-title">Bruno</h6>
+                                <p class="mb-1 text-sm">FORMATEUR SYMPLON</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/dano.plack.3" class="btn-social btn-facebook-link p-2"><i class="fab fa-facebook-f"></i></a>
+                                </div><!-- / social-icons -->
+                            </div><!-- / team-content -->
+                        </div><!-- / image-block -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section><!-- / team -->
+    </div><!-- / main-content -->
+
+    <a href="#top" class="scroll-to-top dark-scroll is-hidden smooth-scroll" data-nav-status="toggle"><i class="md-icon dp24">expand_less</i></a>
+
+    <div id="reveal-footer" class="has-footer-widgets">
+        <div class="reveal-content">
+            <div class="footer-widgets bg-inverse dark">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-lg-3 widget">
+                            <img src="images/sayna_logo.png" style="border-radius: 50%" alt="logo" class="footer-logo">
+                            <p>Ascensseur digital des jeunes a madagascar</p>
+                            <a href="#about" class="btn-link smooth-scroll mt-2"><b>A propos</b></a>
+                        </div><!-- / column-->
+
+                        <div class="col-lg-3 widget">
+                            <h3 class="widget-title">CONTACT US</h3>
+                            <ul class="footer-list">
+                                <li class="mb-3"><a href="tel:034*******"><i class="fas fa-phone mr-2"></i> 034 ** *** **</a></li>
+                                <li class="mb-3"><a href="mailto:hello@sayna.io"><i class="fas fa-envelope mr-2"></i> hello@sayna.io</a></li>
+                                <li class="mb-3"><i class="fas fa-map-marked-alt mr-2"></i> faravohitra Tananarive</li>
+                            </ul>
+                        </div><!-- / column-->
+                    </div><!-- / row -->
+                </div><!-- / container -->
+            </div><!-- / footer-widgets -->
+
+            <footer class="bg-darkgrey dark">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 footer-left-area">
+                            <p>© 2018 Sayna</p>
+                        </div>
+                        <div class="col-lg-4 social-icons footer-right-area">
+                            <a href="https://www.facebook.com/HelloSayna/" class="btn-social text-whit"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/razafimahefam?lang=en" class="btn-social"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/matina_razafimahefa/?hl=en" class="btn-social"><i class="fab fa-instagram"></i></a>
+                        </div><!-- / social-icons -->
+                    </div><!-- / row -->
+                </div><!-- / container -->
+            </footer>
+        </div><!-- / reveal-content -->
+    </div><!-- / reveal-footer -->
+
+
+      
+    <!-- Core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- / Core JavaScript -->
+
+    <!-- preloader -->
+    <script src="js/preloader.js"></script>
+    <!-- / preloader -->
+
+    <!-- Smooth Scrolling -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <!-- / Smooth Scrolling -->
+
+    <!-- Portfolio Script -->
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+    </script>
+    <!-- / Portfolio Script -->
+
+    <!-- LightBox -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script>
+    // This will create a single gallery from all elements that have class "lightbox"
+    $('.lightbox').each(function() {
+        $(this).magnificPopup({
+            delegate: 'a.image-lightbox', // the selector for gallery item
+            type: 'image',
+            gallery: {
+              enabled:true
+            }
+        });
+    });
+    </script>
+    <!-- / LightBox -->
+
+    <!-- facts counter -->
+    <script src="js/jquery.countTo.js"></script>
+     <script>
+          $('.timer').countTo({
+            refreshInterval: 60,
+            formatter: function (value, options) {
+              return value.toFixed(options.decimals);
+            },
+          });
+    </script>
+    <!-- / facts counter -->
+
+    <!-- Hide Nav -->
+    <script src="js/hide-nav.js"></script>
+    <!-- / Hide Nav -->
+
+
+  </body>
+</html>
